@@ -14,6 +14,7 @@ public class Estacion {
         this. numeroAnclajes = numeroAnclajes;
         this.anclajes = new Bicicleta[anclajes];
     }
+
     public int getId() {
         return id;
     }
@@ -26,7 +27,11 @@ public class Estacion {
         return numeroAnclajes;
     }
 
-
+    public void consultarEstacion() {
+        System.out.println("id: " + getId());
+        System.out.println("direccion: " + getDireccion());
+        System.out.println("numero de anclajes: " + getNumeroAnclajes());
+    }
 
 }
 
