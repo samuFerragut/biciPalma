@@ -33,6 +33,18 @@ public class Estacion {
         System.out.println("numero de anclajes: " + getNumeroAnclajes());
     }
 
+    public int anclajesLibres() {
+
+        int anclajesLibres = 0;
+
+        for (Bicicleta anclaje: this.anclajes) {
+            if (anclaje == null) {
+                anclajesLibres ++;
+            }
+            else;
+        }
+        return anclajesLibres;
+    }
 }
 
 
