@@ -1,7 +1,7 @@
-package edu.elsmancs;
-import bicicleta.Bicicleta;
-import estacion.Estacion;
-import tarjetaUsuario.TarjetaUsuario;
+package edu.elsmancs.domain;
+import edu.elsmancs.domain.Bicicleta;
+import edu.elsmancs.domain.Estacion;
+import edu.elsmancs.domain.TarjetaUsuario;
 
 public class BiciPalma {
 
