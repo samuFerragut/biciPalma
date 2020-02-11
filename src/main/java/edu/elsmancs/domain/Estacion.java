@@ -14,10 +14,19 @@ public class Estacion {
         this. numeroAnclajes = numeroAnclajes;
         this.anclajes = new Bicicleta[anclajes];
     }
-    public String consultarEstacion() {
-
-        return "";
+    public int getId() {
+        return id;
     }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public int getNumeroAnclajes() {
+        return numeroAnclajes;
+    }
+
+
 
 }
 
