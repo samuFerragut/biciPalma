@@ -11,4 +11,12 @@ public class EstacionTest {
         Estacion estacion = new Estacion(1,"Manacor", 6);
         estacion.consultarEstacion();
     }
+
+    @Test
+    public void anclajesLibresTest() {
+        Estacion estacion = new Estacion(2, "Palma", 7);
+
+        estacion.consultarEstacion();
+        estacion.anclajesLibres();
+    }
 }
