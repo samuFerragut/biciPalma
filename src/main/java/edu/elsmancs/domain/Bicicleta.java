@@ -7,4 +7,7 @@ public class Bicicleta {
         this.id = id;
     }
 
+    int getId() {
+        return this.id;
+    }
 }
