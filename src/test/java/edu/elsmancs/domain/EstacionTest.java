@@ -27,4 +27,24 @@ public class EstacionTest {
 
        Assert.assertEquals(estacion.anclajesLibres(), 7, 0);
     }
+
+    @Test
+    public void anclarBicicletaTest() {
+        Estacion estacion = new Estacion(1, "Manacor", 6);
+
+        int[] bicicletas = {291, 292, 293, 294};
+        Bicicleta[] anclajes;
+
+        int posicionAnclaje = 0;
+
+        anclajes = new Bicicleta[6];
+
+        for (int id : bicicletas) {
+            Bicicleta bicicleta = new Bicicleta(id);
+            estacion.anclarBicicleta(bicicleta);
+            anclajes[posicionAnclaje] = bicicleta;
+            posicionAnclaje ++;
+        }
+        Assert.assertArrayEquals(anclajes, estacion.anclarBicicleta());
+    }
 }
