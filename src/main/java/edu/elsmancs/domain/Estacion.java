@@ -8,11 +8,11 @@ public class Estacion {
     private int numeroAnclajes = 0;
     private Bicicleta[] anclajes = null;
 
-    public Estacion(int id, String direccion, int anclajes) {
+    public Estacion(int id, String direccion, int numeroAnclajes) {
         this.id = id;
         this.direccion = direccion;
         this. numeroAnclajes = numeroAnclajes;
-        this.anclajes = new Bicicleta[anclajes];
+        this.anclajes = new Bicicleta[numeroAnclajes];
     }
 
     public int getId() {
