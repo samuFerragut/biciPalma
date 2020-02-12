@@ -18,14 +18,13 @@ public class EstacionTest {
     @Test
     public void consultarEstacionTest() {
         Estacion estacion = new Estacion(1,"Manacor", 6);
-        estacion.consultarEstacion();
+        Assert.assertEquals(estacion.getNumeroAnclajes(), 6,0);
     }
 
     @Test
     public void anclajesLibresTest() {
         Estacion estacion = new Estacion(2, "Palma", 7);
 
-        estacion.consultarEstacion();
-        estacion.anclajesLibres();
+       Assert.assertEquals(estacion.anclajesLibres(), 7, 0);
     }
 }
