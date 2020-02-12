@@ -1,12 +1,12 @@
-package edu.elsmancs.domain;
+package edu.elsmancs;
+
 import edu.elsmancs.domain.Bicicleta;
 import edu.elsmancs.domain.Estacion;
-//import edu.elsmancs.domain.TarjetaUsuario;
+import edu.elsmancs.domain.TarjetaUsuario;
 
 public class BiciPalma {
 
     public static void main(String[] args) {
-
         Estacion estacion = new Estacion(1, "Manacor", 6);
 
         /* caso TEST visualizar estado de la estacion
@@ -35,27 +35,31 @@ public class BiciPalma {
 		}
 		*/
 
-/**        for ( int id: bicicletas ){
+        for ( int id: bicicletas ){
             Bicicleta bicicleta = new Bicicleta(id);
             estacion.anclarBicicleta(bicicleta);
-*/        }
+        }
 
-/**        System.out.println("anclajesLibres tras generar "+ bicicletas.length + " bicis: " + estacion.anclajesLibres());
+        System.out.println("anclajesLibres tras generar "+ bicicletas.length + " bicis: " + estacion.anclajesLibres());
 
         /* caso TEST consultar bicicletas ancladas */
 
- /**       System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
+        System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
 
         estacion.consultarAnclajes();
 
         /* caso TEST retirar bicicleta */
 
-  /**      System.out.println("\n **** caso TEST retirar bicicleta **** \n");
+        System.out.println("\n **** caso TEST retirar bicicleta **** \n");
 
         TarjetaUsuario tarjetaUsuario = new TarjetaUsuario("000456789", true);
 
         System.out.println("¿tarjeta de usuario activada? (true/false): " + estacion.leerTarjetaUsuario(tarjetaUsuario) );
 
         estacion.retirarBicicleta(tarjetaUsuario);
-   }
-   */}
+
+        estacion.consultarAnclajes();
+
+        System.out.println("anclajesLibres: " + estacion.anclajesLibres());
+    }
+}
