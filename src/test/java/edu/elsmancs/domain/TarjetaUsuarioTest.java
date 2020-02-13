@@ -1,0 +1,14 @@
+package edu.elsmancs.domain;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class TarjetaUsuarioTest {
+
+    @Test
+    public void crearTarjetaUsuario() {
+        TarjetaUsuario tarjeta = new TarjetaUsuario("123456789", true);
+        assertEquals(tarjeta.getId(), "123456789");
+        assertEquals(tarjeta.getActiva(), true);
+    }
+}
