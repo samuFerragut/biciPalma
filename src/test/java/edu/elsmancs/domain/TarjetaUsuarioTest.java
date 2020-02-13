@@ -23,4 +23,10 @@ public class TarjetaUsuarioTest {
         TarjetaUsuario tarjeta = new TarjetaUsuario("12345678", false);
         assertEquals(tarjeta.getTamaño(), false);
     }
+
+    @Test
+    public void crearTarjetaUsuarioValida() {
+        TarjetaUsuario tarjeta = new TarjetaUsuario("123456789", true);
+        assertEquals(tarjeta.getTamaño(), true);
+    }
 }
