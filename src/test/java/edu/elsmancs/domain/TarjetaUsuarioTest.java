@@ -17,4 +17,10 @@ public class TarjetaUsuarioTest {
         TarjetaUsuario tarjeta = new TarjetaUsuario("1234567891", false);
         assertEquals(tarjeta.getTamaño(), false);
     }
+
+    @Test
+    public void crearTarjetaUsuarioMenorNueve() {
+        TarjetaUsuario tarjeta = new TarjetaUsuario("12345678", false);
+        assertEquals(tarjeta.getTamaño(), false);
+    }
 }

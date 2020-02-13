@@ -16,4 +16,13 @@ public class TarjetaUsuario {
     public boolean getActiva() {
         return this.activa;
     }
+
+    public boolean getTamaño() {
+
+        if (getId().length() != 9) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
