@@ -11,4 +11,10 @@ public class TarjetaUsuarioTest {
         assertEquals(tarjeta.getId(), "123456789");
         assertEquals(tarjeta.getActiva(), true);
     }
+
+    @Test
+    public void crearTarjetaUsuarioMayorNueve() {
+        TarjetaUsuario tarjeta = new TarjetaUsuario("1234567891", false);
+        assertEquals(tarjeta.getTamaño(), false);
+    }
 }
