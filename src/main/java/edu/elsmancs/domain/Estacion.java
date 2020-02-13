@@ -58,6 +58,7 @@ public class Estacion {
             if (anclaje == null) {
                 this.anclajes[posicion] = bicicleta;
                 mostrarAnclaje(bicicleta, numeroAnclaje);
+                break;
             } else
                 posicion++;
             numeroAnclaje++;
