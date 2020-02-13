@@ -45,6 +45,6 @@ public class EstacionTest {
             anclajes[posicionAnclaje] = bicicleta;
             posicionAnclaje ++;
         }
-        Assert.assertArrayEquals(anclajes, estacion.anclarBicicleta());
+        Assert.assertArrayEquals(anclajes, estacion.getAnclajes());
     }
 }
