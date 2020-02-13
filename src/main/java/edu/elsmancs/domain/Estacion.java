@@ -27,6 +27,10 @@ public class Estacion {
         return numeroAnclajes;
     }
 
+    public Object[] getAnclajes() {
+        return this.anclajes;
+    }
+
     public void consultarEstacion() {
         System.out.println("id: " + getId());
         System.out.println("direccion: " + getDireccion());
